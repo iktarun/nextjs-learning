@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-learning",
+  "version": "1.0.0",
+  "description": "nextjs app learning project",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iktarun/nextjs-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iktarun/nextjs-learning/issues"
+  },
+  "homepage": "https://github.com/iktarun/nextjs-learning#readme"
+}
