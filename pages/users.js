@@ -1,12 +1,12 @@
+import User from "../components/user";
 function UserList({ users }) {
-  console.log("users:", users);
   return (
     <>
       <h1>User List Page</h1>
       <ul>
         {users.map((user) => (
           <li key={user.id}>
-            {user.id} - {user.name}
+            <User user={user} />
           </li>
         ))}
       </ul>
@@ -21,7 +21,6 @@ export async function getStaticProps() {
 
   const data = await response.json();
 
-  //   console.log(data);
   return {
     props: {
       users: data,
