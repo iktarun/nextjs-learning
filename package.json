@@ -4,6 +4,7 @@
   "description": "nextjs app learning project",
   "main": "index.js",
   "dependencies": {
+    "json-server": "^0.17.0",
     "next": "^12.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -13,7 +14,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve-json": "json-server --watch db.json --port 4000"
   },
   "repository": {
     "type": "git",
