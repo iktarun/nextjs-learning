@@ -18,7 +18,7 @@ function CommentPage() {
       },
     });
     const data = await response.json();
-    console.log(data);
+
     setComments(data);
   };
 
