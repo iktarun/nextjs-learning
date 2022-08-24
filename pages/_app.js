@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -6,9 +7,16 @@ import "../styles/layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />);
+  }
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <Head>
+        {/* <title>About Page</title> */}
+        <meta name="description" content="You Tube resources" />
+      </Head>
       <Component {...pageProps} /> <Footer />
     </>
   );
