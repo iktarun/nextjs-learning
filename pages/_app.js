@@ -1,8 +1,17 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 import "../styles/global.css";
+import "../styles/layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} /> <Footer />
+    </>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for

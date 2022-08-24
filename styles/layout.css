@@ -1,0 +1,22 @@
+.layout-header {
+  background-color: aqua;
+  color: azure;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+}
+
+.layout-footer {
+  background-color: antiquewhite;
+  color: azure;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
