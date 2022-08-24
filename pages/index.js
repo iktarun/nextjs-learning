@@ -20,7 +20,9 @@ function HomePage() {
       <Link href="/posts">
         <a>Posts</a>
       </Link>
-      <button onClick={handleClick}>Place Order</button>
+      <button onClick={handleClick} className="btn btn-primary">
+        Place Order
+      </button>
     </div>
   );
 }
