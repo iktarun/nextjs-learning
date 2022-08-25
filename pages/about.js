@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Head>
-        <title>About Page</title>
+        <title>About Page - {process.env.NEXT_PUBLIC_app_name}</title>
         <meta name="description" content="Free resources" />
       </Head>
       <div className={styles.highlight}>About</div>
