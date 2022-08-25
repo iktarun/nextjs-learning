@@ -9,23 +9,25 @@ function HomePage() {
   };
 
   return (
-    <div className="content">
-      <h1>Welcome to Next.js!</h1>
-      <Link href="/blog">
-        <a>Blog</a>
-      </Link>
-      <br />
-      <Link href="/product">
-        <a>Product</a>
-      </Link>
-      <br />
-      <Link href="/posts">
-        <a>Posts</a>
-      </Link>
-      <br />
-      <button onClick={handleClick} className="btn btn-primary">
-        Place Order
-      </button>
+    <div>
+      <div className="content">
+        <h1>Welcome to Next.js!</h1>
+        <Link href="/blog">
+          <a>Blog</a>
+        </Link>
+        <br />
+        <Link href="/product">
+          <a>Product</a>
+        </Link>
+        <br />
+        <Link href="/posts">
+          <a>Posts</a>
+        </Link>
+        <br />
+        <button onClick={handleClick} className="btn btn-primary">
+          Place Order
+        </button>
+      </div>
     </div>
   );
 }

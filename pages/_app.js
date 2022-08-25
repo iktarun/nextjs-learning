@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Header from "../components/Header";
+// import Head from "next/head";
+// import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import "../styles/global.css";
@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* <Header /> */}
-      <Head>
-        {/* <title>About Page</title> */}
+      {/* <Head>
+        <title>About Page</title>
         <meta name="description" content="You Tube resources" />
-      </Head>
+      </Head> */}
       <Component {...pageProps} /> <Footer />
     </>
   );
