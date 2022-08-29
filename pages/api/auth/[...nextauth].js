@@ -9,4 +9,11 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
+  database: process.env.DB_URL,
+  session: {
+    jwt: true,
+  },
+  jwt: {
+    secret: "tesingthefunda",
+  },
 });
